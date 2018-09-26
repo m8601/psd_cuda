@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+html { font-size: 62.5%; }
+
 body {
   font-family: 'Titillium Web', sans-serif;
   background: #333;
@@ -16,3 +18,28 @@ body {
     width: 80%;
   }
 }
+
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 25px auto;
+  display: block;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  @media screen and (min-width: 569px) {
+    font-size: 1.8rem;
+    margin: 50px auto;
+  }
+}
+
+.btn--orange {
+  background: #eb7d4b;
+  border-bottom: 5px solid darken($color: #eb7d4b, $amount: 5%)
+} 

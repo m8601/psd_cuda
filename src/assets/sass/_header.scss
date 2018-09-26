@@ -1,0 +1,18 @@
+header {
+  background: #87509c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__welcomeMessage {
+  color: #fff;
+  font-size: 2.75rem;
+  font-weight: bold;
+
+  @media screen and (min-width: 569px) {
+    font-size: 3.6rem;
+  }
+}
