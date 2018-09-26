@@ -7,7 +7,43 @@ html { font-size: 62.5%; }
 body {
   font-family: 'Titillium Web', sans-serif;
   background: #333;
-  overflow: hidden;
+  //overflow: hidden;
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+  @media (min-width: 569px){
+    padding: 100px;
+  }
+
+  .sectionTitle {
+    color: inherit;
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 569px) {
+      font-size: 3.6rem;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      margin: 25px auto;
+      background: rgba(0,0,0,.15);
+    }
+  }
+
+  p {
+    color: inherit;
+    font-size: 1.8rem;
+  }
 }
 
 .container {
@@ -33,7 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  @media screen and (min-width: 569px) {
+  @media screen and (min-width: 768px) {
     font-size: 1.8rem;
     margin: 50px auto;
   }
