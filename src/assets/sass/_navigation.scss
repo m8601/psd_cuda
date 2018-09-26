@@ -1,0 +1,178 @@
+.navigation-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation-menu__wrapper {
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navigation-menu__menu {
+  background: orange;
+  position: absolute;
+  top:60px;
+  left: -1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left .5s ease-in-out;
+
+}
+
+.navigation-menu__menuItem {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.navigation-menu__menu--open {
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+// Toggle menu stuff \/
+.navigation-menu_button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-btn {
+  height: 5px;
+  width: 100%;
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__top {
+  top: 7px;
+}
+
+.menu-btn__middle {
+  top: 17px;
+}
+
+.menu-btn__bottom {
+  top: 27px;
+}
+
+.menu-btn__middle--open {
+  animation: middleBar .5s ease-in-out forwards;
+}
+
+.menu-btn__middle--close {
+  animation: middleBarRev .5s ease-in-out forwards;
+}
+
+.menu-btn__top--open {
+  animation: topBar .5s ease-in-out forwards;
+}
+
+.menu-btn__top--close {
+  animation: topBarRev .5s ease-in-out forwards;
+}
+
+.menu-btn__bottom--open {
+  animation: bottomBar .5s ease-in-out forwards;
+}
+
+.menu-btn__bottom--close {
+  animation: bottomBarRev .5s ease-in-out forwards;
+}
+
+@keyframes topBar {
+  0% {
+    top: 7px;
+  }
+  50% {
+    top: 17px;
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 17px;
+  }
+}
+
+@keyframes topBarRev {
+  0% {
+    transform: rotate(45deg);
+    top: 17px;
+  }
+  50% {
+    top: 17px;
+  }
+  100% {
+    top: 7px
+  }
+}
+
+@keyframes middleBar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes middleBarRev {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bottomBar {
+  0% {
+    top: 27px;
+  }
+  50% {
+    top: 17px;
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 17px;
+  }
+}
+
+@keyframes bottomBarRev {
+  0% {
+    transform: rotate(-45deg);
+    top: 17px;
+  }
+  50% {
+    top: 17px;
+  }
+  100% {
+    top: 27px;
+  }
+}

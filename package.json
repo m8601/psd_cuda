@@ -1,0 +1,49 @@
+{
+  "name": "@jr-cologne/create-gulp-starter-kit",
+  "version": "0.2.0-alpha",
+  "description": "A simple Gulp 4 Starter Kit for modern web development.",
+  "keywords": [
+    "gulp",
+    "gulp-starter-kit",
+    "sass",
+    "babel",
+    "browser-sync",
+    "autoprefixer",
+    "modern-web-dev"
+  ],
+  "scripts": {
+    "start": "gulp"
+  },
+  "bin": {
+    "create-gulp-starter-kit": "./bin/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jr-cologne/gulp-starter-kit.git"
+  },
+  "author": "JR Cologne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jr-cologne/gulp-starter-kit/issues"
+  },
+  "homepage": "https://github.com/jr-cologne/gulp-starter-kit",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.0"
+  }
+}
