@@ -1,0 +1,27 @@
+
+.skills {
+  background: #fff;
+  color: #3c4761;
+}
+
+.skills__list {
+  @extend .services__list;
+}
+
+.skills__skill {
+  @extend .services__service;
+
+  h3 {
+    margin: 15px auto 5px;
+  }
+}
+
+.skills__bar {
+  width: 150px;
+}
+
+.skills__label {
+  color: #3c4761 !important;
+  font-size: 5rem;
+  font-weight: 300;
+}

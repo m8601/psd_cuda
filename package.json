@@ -44,6 +44,7 @@
     "gulp-uglify": "^3.0.1"
   },
   "dependencies": {
-    "fs-extra": "^7.0.0"
+    "fs-extra": "^7.0.0",
+    "progressbar.js": "^1.0.1"
   }
 }
