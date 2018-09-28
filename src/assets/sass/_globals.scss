@@ -6,15 +6,14 @@ html { font-size: 62.5%; }
 
 body {
   font-family: 'Titillium Web', sans-serif;
-  background: #333;
-  //overflow: hidden;
+  
 }
 
 section {
   padding: 50px 0;
   text-align: center;
   @media (min-width: 569px){
-    padding: 100px;
+    padding: 100px 0;
   }
 
   .sectionTitle {

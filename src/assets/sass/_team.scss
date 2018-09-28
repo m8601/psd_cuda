@@ -1,0 +1,27 @@
+.team {
+  background: #e7f1f8;
+  color: #3c4761;
+}
+
+.team__members {
+  @extend .services__list;
+}
+
+.team__member {
+  @extend .services__service;
+
+  img {
+    border-radius: 50%;
+  }
+
+  h3 {
+    margin: 15px auto 5px;
+  }
+
+  span {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #30bae7;
+  }
+}
