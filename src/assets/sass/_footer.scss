@@ -1,0 +1,28 @@
+footer {
+  color: #fff;
+  background: #344b8e;
+  font-size: 2.4rem;
+  
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 110px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: color .3s ease-in-out;
+      padding: 10px 20px;
+      &:hover {
+        color: #30bae7;
+      }
+    }
+  }
+}
